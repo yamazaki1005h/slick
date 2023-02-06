@@ -8,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/logo.svg">
     <link rel="stylesheet" href="ress.min.css">
-    <link rel="stylesheet" href="slick/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="jquery.min.js"></script>
-    <script src="slick.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -50,16 +48,20 @@
 
         <section id="pickup">
             <h2 class="sec-title">PICK UP</h2>
-            <div class="container"></div>
-            <img src="img/pickup1.jpg" alt="ピックアップ１ テキストテキスト">
-            <img src="img/pickup2.jpg" alt="ピックアップ２ テキストテキスト">
-            <img src="img/pickup3.jpg" alt="ピックアップ３ テキストテキスト">
-            <img src="img/pickup4.jpg" alt="ピックアップ４ テキストテキスト">
-            <img src="img/pickup5.jpg" alt="ピックアップ５ テキストテキスト">
-            <img src="img/pickup6.jpg" alt="ピックアップ６ テキストテキスト">
-            <img src="img/pickup7.jpg" alt="ピックアップ７ テキストテキスト">
-            <img src="img/pickup8.jpg" alt="ピックアップ８ テキストテキスト">
-            <img src="img/pickup9.jpg" alt="ピックアップ９ テキストテキスト">
+            <div class="container p-infinite-slider">
+                <div class="p-infinite-slider__items">
+                    <ul class="js-infinite-slider p-infinite-slider__lists">
+                        <li class="p-infinite-slider__list"><img src="img/pickup1.jpg" alt="ピックアップ１ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup2.jpg" alt="ピックアップ２ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup3.jpg" alt="ピックアップ３ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup4.jpg" alt="ピックアップ４ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup5.jpg" alt="ピックアップ５ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup6.jpg" alt="ピックアップ６ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup7.jpg" alt="ピックアップ７ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup8.jpg" alt="ピックアップ８ テキストテキスト"></li>
+                        <li class="p-infinite-slider__list"><img src="img/pickup9.jpg" alt="ピックアップ９ テキストテキスト"></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -186,6 +188,9 @@
     <footer id="footer">
         <p>&copy; Sneakers</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

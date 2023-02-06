@@ -70,7 +70,6 @@ li {
 ハンバーガーメニュー
 解説は、「中級編:ストアサイト（インテリア）」のcss参照
 */
-
 #navi {
     display: block;
     position: fixed;
@@ -216,12 +215,12 @@ pickup
 }
 
 .container {
-    display:flex;
+    /* display:flex; */
     padding: 20px 40px;
 }
 
 .container img {
-    width: 50%;
+    /* width: 50%; */
     align-self: flex-start;
 }
 /*---------------------------------------

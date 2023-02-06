@@ -1,3 +1,4 @@
+
 $(function () {
     /*==================================
     スマホメニュー
@@ -18,9 +19,9 @@ $(function () {
     });
 
     // リンクをクリックしたときにメニューを閉じる
-    ('#navi a').on('click', function () {
-        $('#header').removeClass('open')
-    });
+    // ('#navi a').on('click', function () {
+    //     $('#header').removeClass('open')
+    // });
 
     /*================================================
     スムーススクロール
@@ -45,20 +46,47 @@ $(function () {
     ===============================================*/
     // カルーセル用　jQueryプラグイン　slickの設定
     // マニュアル : https://kenwheeler.github.io/slick/
-    $('.slick-area').slick({
+    // $('.slick-area').slick({
+    //     arrows: false,
+    //     centerMode: true,
+    //     centerpadding: '100px',
+    //     slidesToshow: 3,
+    //     responsive: [
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 centerpadding: '50px',
+    //                 slidesToshow: 1
+    //             }
+    //         }
+    //     ]
+    // });
+    const optionInfinite = {
+        infinite: true,
         arrows: false,
-        centerMode: true,
-        centerpadding: '100px',
-        slidesToshow: 3,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    centerpadding: '50px',
-                    slidesToshow: 1
-                }
-            }
-        ]
+        swipe: false,
+        dots: false,
+        variableWidth: true,  // スライド幅の自動計算を無効
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 2000,
+        cssEase: "linear",
+    }
+
+    // infinite: true ・・・最後まで来たら最初に戻る（無限ループさせる）
+    // arrows: false　・・・ 次へ、前への矢印を表示しない
+    // swipe: false　・・・　スワイプを無効に
+    // dots: false　・・・　ドットナビゲーションを出さない
+    // variableWidth: true　・・・スライド幅の自動計算を無効に
+    // autoplay: true　・・・　自動でスライドが流れるように
+    // autoplaySpeed: 0　・・・　スライドの自動再生時の変更間隔を設定（ミリ秒）
+    // speed: 9000　・・・　スライドが流れる時間を設定（ミリ秒）
+    // cssEase: “linear”　　・・・　イージングを指定（ease, ease-in, linear）
+    // rtl: true　・・・　逆方向にスライドさせる
+
+    jQuery(function($){
+        const slickInfinite = $('.js-infinite-slider');
+        $(slickInfinite).slick(optionInfinite);
     });
 
     /*================================================
